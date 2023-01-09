@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:util="http://www.springframework.org/schema/util"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd
+  http://www.springframework.org/schema/util
+  http://www.springframework.org/schema/util/spring-util.xsd">
+
+ 
+ <!-- STAND ALONE  COLLECTIONS -->
+<context:annotation-config/>
+
+    <context:component-scan base-package="com.spring.standalone"></context:component-scan>
+
+
+
+
+    <util:list list-class="java.util.Stack"  id="myfriendz">
+    
+    <value>Premkumar</value>
+    <value>Amar</value>
+    <value>Bhavani</value>
+    <value>Aishwarya</value>
+    
+    
+    </util:list>
+    
+    <util:map map-class="java.util.HashMap" id="fees">
+    
+    <entry key="java" value="5000"/>
+     <entry key="pythan" value="3000"/>
+      <entry key="sql" value="3500"/>
+       <entry key="javaScript" value="4500"/>
+    
+    
+    
+    
+    </util:map>
+    
+ 
+ <!--  <bean class="com.spring.standalone.Person" name="person">
+  
+  <property name="friends">
+  
+  <ref bean="myfriendz"/>
+  
+</property>
+  </bean>
+ 
+  -->
+ 
+ 
+ <bean class="com.spring.standalone.Car" name="Car" scope="prototype"/>
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ </beans>

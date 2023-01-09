@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <!-- SETTER INJECTION -->
+ 
+ <bean class="com.spring.refference.Object_B" name="Bref">
+ 
+ <property name="y" value="2323"/>
+
+ </bean>
+
+<bean class="com.spring.refference.Object_A" name="Aref">
+<property name="x" value="3262"/>
+<property name="b">
+<ref bean="Bref"/>
+</property>
+
+<!--  <property name="ob" ref="Bref"/> -->
+
+</bean>
+ 
+ </beans>

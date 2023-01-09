@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:c="http://www.springframework.org/schema/c"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <!-- 	CONSTRUCTOR   INJECTION -->
+ <bean class="com.spring.constructor.Student" name="Student" init-method="init" destroy-method="destroy 8*9,m   ">
+ <constructor-arg>
+ <value>Premkumar</value>
+ </constructor-arg>
+   
+ <constructor-arg value="1381283" type="int"/>
+ <constructor-arg ref="Employee"/>
+
+  <constructor-arg>
+  <list>
+   <value>4389835</value>
+   <value>ahask</value>
+   <value>4322</value>
+  
+  
+  
+  
+  
+  </list>
+  
+  
+  
+  
+  </constructor-arg>
+
+
+
+
+ </bean>
+<!--    <bean class="com.spring.constructor.Employee" name="Employee">
+ <constructor-arg>
+ <value>aalam</value>
+ </constructor-arg>
+
+  <constructor-arg value="16978776"/>
+ 
+ </bean>
+ --> 
+   <bean  class="com.spring.constructor.Employee" name="Employee " c:name="Amar Talaghatt" c:salary="2100"/>
+ 
+
+ 
+ 
+ 
+ 
+ 
+ </beans>
